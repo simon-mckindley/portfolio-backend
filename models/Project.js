@@ -12,10 +12,12 @@ const projectSchema = new Schema({
         type: String,
         trim: true
     },
-    technologies: {
-        type: String,
-        trim: true
-    },
+    technologies: [
+        {
+            type: String,
+            trim: true
+        }
+    ],
     link: {
         type: String,
         required: true
