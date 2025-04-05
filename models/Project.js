@@ -19,8 +19,10 @@ const projectSchema = new Schema({
         }
     ],
     link: {
-        type: String,
-        required: true
+        type: String
+    },
+    code: {
+        type: String
     }
 }, { timestamps: true });
 
